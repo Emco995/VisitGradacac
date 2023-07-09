@@ -1,0 +1,13 @@
+.video {
+    position: relative;
+    min-width: 100%; 
+    /* margin: -8px; */
+    /* height: 710px; */
+    /* /* width: 100vw; */
+    height: 100vh;
+    margin-left: 0;
+    margin-right: 0;
+    object-fit: cover;
+    z-index: -999;
+    filter: brightness(60%);
+}
