@@ -1,0 +1,16 @@
+.map-container {
+    margin-top: 40px;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+}
+
+.map-container h1 {
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.map-container .pointer {
+   width: 80px;
+   height: 80px;
+   margin-bottom: 20px;
+}

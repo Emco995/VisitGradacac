@@ -1,8 +1,9 @@
-
-import styles from '../styles/Home.module.css';
-import Link from 'next/link';
+// import { config } from '@fortawesome/fontawesome-svg-core'
+// import '@fortawesome/fontawesome-svg-core/styles.css'
+// config.autoAddCss = false
 import Header from './Components/Header/Header';
 import Main from './Components/Main/Main';
+import Footer from './Components/Footer/Footer';
 
 
 export default function Home() {
@@ -10,9 +11,7 @@ export default function Home() {
     <div>
       <Header></Header>
       <Main></Main>
-        <h1 className={styles.title}>
-          <Link href="/locations">Locations</Link>
-        </h1>
+      <Footer></Footer>
     </div>
   )
 }

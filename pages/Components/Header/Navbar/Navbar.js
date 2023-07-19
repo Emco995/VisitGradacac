@@ -21,6 +21,7 @@ const Navbar = () => {
     return(
         <div className={navbar ? `${classes.navbar} ${classes.active}` : `${classes.navbar}`}>
             <Image src={logo} alt="" className={classes.logo}></Image>
+            <h3 className={classes['page-title']}>visitGradacac</h3>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
