@@ -81,13 +81,6 @@
 }
 
 .down {
-    /* padding-top: 15px;
-    border-radius: 50%;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-60%);
-    cursor: pointer; */
-
    position: absolute;
    top: 50%;
    z-index: 100;
@@ -104,13 +97,6 @@
 }
 
 .up{
-    /* padding-top: 15px;
-    border-radius: 50%;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-60%);
-    cursor: pointer; */
-
     position: absolute;
     top: 50%;
     z-index: 100;

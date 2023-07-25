@@ -30,21 +30,21 @@ const ImageSlider = () => {
          {dataSlider.map((obj, index) => {
            return (
                <div style={{backgroundColor: `${obj.backgroundColor}`}} key={obj.id} 
-                    className={slideIndex === index + 1 ? 'slide active-anim'  : 'slide'}> 
+                    className={slideIndex === index + 1 ?  `${classes.slide} ${classes['active-anim']}`   : `${classes.slide}`}> 
                   <h2>{obj.title}</h2>
-                  <p className="subtitle">{obj.subTitle}</p>
+                  <p className={classes.subtitle}>{obj.subTitle}</p>
                </div>
            )
        })}
        </div>   
  
-       <div className="right-slide">
+       <div className={classes['right-slide']}>
        {dataSlider.map((obj, index) => {
            return (
                <div key={obj.id} 
                     className={slideIndex === index + 1 ? `${classes.slide} ${classes['active-anim']}` : `${classes.slide}`}> 
                    <Image 
-                    //  src={process.env.PUBLIC_URL + `/img${index + 1}.JPEG`} 
+                     src={`/img${index + 1}.JPEG`} 
                      width={500}
                      height={500}
                      alt="">

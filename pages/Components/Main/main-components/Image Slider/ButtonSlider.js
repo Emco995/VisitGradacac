@@ -7,7 +7,7 @@ import Image from 'next/image';
 const ButtonSlider = ({direction, moveSlide}) => {
     return (
         <button onClick={moveSlide}
-        className={direction === `${classes.down}` ? `${classes['btn-slide']} ${classes.up}` : `${classes['btn-slide']} ${classes.down}}`}>
+        className={direction === `${classes.down}` ? `${classes['btn-slide']} ${classes.up}` : `${classes['btn-slide']} ${classes.down}`}>
            <Image src={direction === `${classes.down}` ? upArrow : downArrow} alt=""></Image>
         </button>
     )
