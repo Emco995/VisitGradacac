@@ -8,7 +8,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const changeNavBackground = () => {
-            if(window.scrollY >= 80 ){
+            if(window.scrollY >= 80 && window.location.pathname === '/'){
              setNavbar(true);
             } else {
              setNavbar(false);

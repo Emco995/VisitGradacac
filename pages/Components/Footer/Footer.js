@@ -5,6 +5,7 @@ import facebookIcon from './Icons/facebook-color.svg';
 import instagramIcon from './Icons/instagram-1.svg';
 import twitterIcon from './Icons/twitter.svg';
 
+
 const Footer = () => {
     return(
         <div className={classes.footer}>
