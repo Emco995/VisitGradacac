@@ -1,9 +1,6 @@
-// import { config } from '@fortawesome/fontawesome-svg-core'
-// import '@fortawesome/fontawesome-svg-core/styles.css'
-// config.autoAddCss = false
 import Header from './Components/Header/Header';
 import Main from './Components/Main/Main';
-import Footer from './Components/Footer/Footer';
+import Link from 'next/link';
 
 
 export default function Home() {
@@ -11,7 +8,6 @@ export default function Home() {
     <div>
       <Header></Header>
       <Main></Main>
-      <Footer></Footer>
     </div>
   )
 }

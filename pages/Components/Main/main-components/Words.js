@@ -1,32 +1,18 @@
-import classes from './Words.module.css'
+import React from "react";
+import styles from "./Words.module.css";
+import WordsAnimated from './WordsAnimated';
+import WordsCharacter from './WordsCharacter';
+
 const Words = () => {
-   return (
-    <div>
-       <div className={classes['word-welcome']}>
-            <span>W</span>
-            <span>E</span>
-            <span>L</span>
-            <span>C</span>
-            <span>O</span>
-            <span>M</span>
-            <span>E</span> 
-            <br/> 
-            <span>T</span>
-            <span>O</span>
-            <br></br>
-       </div>
-       <div className={classes['word-gradacac']}>
-            <span>G</span>
-            <span>R</span>
-            <span>A</span>
-            <span>D</span>
-            <span>A</span>
-            <span>C</span>
-            <span>A</span>
-            <span>C</span>
-       </div>
-    </div>
-   )
+return(
+
+         <div>
+            <div className={`${styles['container']} ${styles['h-screen']} ${styles['mx-auto']} ${styles['flex']} ${styles['flex-col']} ${styles['items-center']} ${styles['justify-center']}}`}>
+                   <WordsAnimated text={`WELCOME TO`}/>
+                   <WordsCharacter text="GRADAČAC" />
+            </div>
+        </div>
+)
 }
 
 export default Words;

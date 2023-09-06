@@ -1,10 +1,11 @@
 .navbar {
     position: fixed;
+    visibility: hidden;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     transition: 0.6s ;
     padding: 40px 100px;
@@ -12,8 +13,11 @@
 }
 
 .navbar.active {
-    background-color: black;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 5px 100px;
+    visibility:visible;
 }
 
 .navbar .logo {
@@ -24,13 +28,16 @@
 .logo {
     width: 35px;
     height: 50px;
+    padding-right: 10px;
 } 
 
 .page-title {
+    border-left: 2px solid white;
+    padding-left: 10px;
     color: white;
     font-family: Roboto, sans-serif;
     font-weight: 400;
-    margin-right: 450px;
+    margin-right: 740px;
 }
 
 .navbar ul {
@@ -50,13 +57,12 @@
 .navbar ul li a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 35px;
     letter-spacing: 2px;
     font-weight: 500px;
     font-family: Roboto, sans-serif;
     cursor: pointer;
     transition: 0.6s;
-    margin-left: 10px;
     transition: 0.3s ease;
 }
 
@@ -72,5 +78,149 @@
  }
 
  .navbar ul li a:hover:before{
+    width: 60%;
+}
+
+/* //////////////////////////////////////// */
+.subMenu {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    visibility: hidden; 
+    z-index: 0; 
+}
+
+.navLinkHome:hover ul.subMenu {
+    opacity: 1;
+    top: 80px;
+    visibility: visible;
+    z-index: 1;
+}
+
+.subMenu li {
     width: 100%;
+}
+
+.subMenu li a:hover {
+   background: red;
+}
+
+/* ///////////////////////////////////////////////////// */
+
+
+.stationNav {
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+}
+
+
+.stationNavLeftPart {
+    display: flex;
+    margin-left: 180px;
+    margin-right: 200px;
+    width: 30%;
+}
+
+.stationNavLogo {
+    width: 80px;
+    height: 100px;
+    padding-right: 10px;
+}
+
+.stationNavTitle {
+    border-left: 2px solid rgb(254, 254, 254);
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 1.5em;
+    color: white;
+    font-family: Roboto, sans-serif;
+}
+
+.stationNavLeftPart{
+    width: 70%;
+}
+
+.stationNavElements {
+    margin-top: 20px;
+    /* border: 3px solid white; */
+    /* width: 700px; */
+}
+
+.navElementsLinks {
+    width: 620px;
+    /* border-top: 4px solid white; */
+    padding-top: 20px;
+    /* padding-top: 10px; */
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.navElementsLinks li a{
+    border-top: 4px solid white;
+    color: white;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-size: 1.1em;
+}
+
+.navElementsLinks li a:hover{
+    border-top: 4px solid rgb(31, 114, 246);
+    border-bottom: 4px solid rgb(31, 114, 246);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: 0.5s ease;
+    text-decoration: underline rgb(31, 114, 246);
+}
+
+.navLinkHome {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* border-top: 4px solid white; */
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
+    padding-right: 45px; 
+    padding-left: 45px; 
+}
+
+
+.navLinkAbout{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* border-top: 4px solid white; */
+    border-bottom: 4px solid white;
+    padding-right: 45px; 
+    padding-left: 45px; 
+}
+
+.navLinkLocations {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* border-top: 4px solid white; */
+    border-bottom: 4px solid white;
+    padding-right: 45px; 
+    padding-left: 45px; 
+}
+
+.navLinkContact{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* border-top: 4px solid white; */
+    border-bottom: 4px solid white;
+    padding-right: 45px; 
+    padding-left: 45px; 
+}
+
+.navLinkMap {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* border-top: 4px solid white; */
+    border-bottom: 4px solid white;
+    border-right: 4px solid white;
+    padding-right: 45px; 
+    padding-left: 45px; 
 }

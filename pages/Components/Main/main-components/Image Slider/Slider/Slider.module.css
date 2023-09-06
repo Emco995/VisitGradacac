@@ -1,0 +1,136 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    min-height: 100vh;
+    column-gap: 3rem;
+    padding-block: min(20vh, 3rem);
+    font-family: Roboto, sans-serif;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+@media screen and (min-width: 48rem) {
+    .carousel {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.carouselContent {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.carouselContent span{
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+   font-size: 1rem;
+   color: #4b4b4b;
+}
+
+.carouselContent h1 {
+  text-transform: capitalize;
+  letter-spacing: 0.8px;
+  font-size: 4rem;
+  line-height: 1.1;
+  background-color: #00a4aa;
+  background-image: linear-gradient(45deg, #00a4aa, #000);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.carouselContent hr {
+    display: block;
+    background: #00a4aa;
+    height: 0.25rem;
+    width: 6.25rem;
+    border: none;
+    margin: 1.125rem 0 1.875rem 0;
+}
+
+.carouselContent p {
+    line-height: 1.6;
+    color: #4b4b4b;
+}
+
+
+.mySwiper {
+    width: 100%;
+    padding-top: 3.125rem;
+    /* padding-right: 140px; */
+}
+
+.mySwiperSlider {
+    width: 18.75rem;
+    /* width: 100px; */
+    /* height: 28.125rem; */
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* .mySwiperSlider div {
+    display: none;
+    opacity: 0; 
+     padding-bottom: 0.625rem;
+} */
+
+ .mySwiperSlider div{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   opacity: 1;
+   background-color: rgba(0, 0, 0, 0.3);
+   height: 100%;
+} 
+
+.mySwiperSlider div a {
+    align-self: flex-start;
+} 
+
+.mySwiperSlider h2 {
+    color: white;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: 0.625rem;
+    padding: 0 0 0 1.563rem;
+    text-transform: uppercase;
+}
+
+
+.mySwiperSlider p {
+    color: #dadada;
+    padding: 0 1.563rem;
+    line-height: 1.6;
+    font-size: 0.90rem;
+}
+
+.mySwiperSlider a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    /* margin: 1.25rem 1.5rem 3.5rem; */
+}
+
+.mySwiperSlider a:hover {
+    transition: 0.2s ease-in;
+    color: #00a4aa;
+}
+
+.swiper-pagination-bullet, 
+.swiper-pagination-bullet-active {
+    background: white;
+}
+
+.sliderBtn {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 130px;
+    margin-left: 25px;
+    margin-bottom: 40px;
+}
